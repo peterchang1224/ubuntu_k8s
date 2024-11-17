@@ -32,6 +32,11 @@ sudo rm -rf /var/lib/docker
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 ```
+#### 1.5.1 Get Kustomize Ready
+```
+curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh" | bash
+sudo mv kustomize /usr/local/bin/
+```
 ### 1.6 Get Kubebuilder Ready
 ```
 # download kubebuilder and install locally.
